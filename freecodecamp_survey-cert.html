@@ -6,7 +6,7 @@
     <title>Fishing Survey</title>
   </head>
   <body>
-    <div class="container">
+    <div class="main-container">
       <div id="surveyContainer">
         <header class="header">
           <h1 id="title" class="header-text">Fishing Survey</h1>
@@ -15,28 +15,32 @@
           </p>
         </header>
         <!-- The form tag groups all the div containers -->
-        <form id="survey-form-group">
+        <form id="form-container">
           <div class="survey-form-control">
-            <label id="name-label" for="name">Name</label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              class="survey-form-control"
-              placeholder="Enter your name"
-              required
-            />
+            <label id="name-label" for="name"
+              >Name
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="input-control"
+                placeholder="Enter your name"
+                required
+            /></label>
           </div>
           <div class="survey-form-control">
-            <label id="email-label" for="email">Email</label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              class="form-control"
-              placeholder="Enter your email"
-              required
-            />
+            <label id="email-label" for="email"
+              >Email
+
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="input-control"
+                placeholder="Enter your email"
+                required
+              />
+            </label>
           </div>
           <div class="survey-form-control">
             <label id="age-label" for="age"
