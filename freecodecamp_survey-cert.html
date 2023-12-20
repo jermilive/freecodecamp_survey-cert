@@ -3,29 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="freecodecamp_survey-cert_style.css" />
-    <title>Jay's Aardvark Survey</title>
+    <title>Fishing Survey</title>
   </head>
-
   <body>
-    <div>
-      <div>
+    <div class="container">
+      <div id="surveyContainer">
         <header class="header">
-          <h1 id="title" class="header-text">Jay's Code Survey</h1>
-          <p id="description" class="description-text">Please take a moment to take this survey</p>
+          <h1 id="title" class="header-text">Fishing Survey</h1>
+          <p id="description" class="description-text">
+            Please take a moment to take this survey for fishing awearness
+          </p>
         </header>
-        <form id="survey-form">
-          <div class="form-group">
+        <!-- The form tag groups all the div containers -->
+        <form id="survey-form-group">
+          <div class="survey-form-control">
             <label id="name-label" for="name">Name</label>
             <input
               type="text"
               name="name"
               id="name"
-              class="form-control"
+              class="survey-form-control"
               placeholder="Enter your name"
               required
             />
           </div>
-          <div class="form-group">
+          <div class="survey-form-control">
             <label id="email-label" for="email">Email</label>
             <input
               type="email"
@@ -36,7 +38,7 @@
               required
             />
           </div>
-          <div class="form-group">
+          <div class="survey-form-control">
             <label id="age-label" for="age"
               >Age
               <span class="clue">(optional)</span>
@@ -44,25 +46,25 @@
             <input type="number" name="age" id="age" class="form-control" placeholder="Age" />
           </div>
 
-          <div class="form-control">
+          <div class="survey-form-control">
             <p>What describes your current situation?</p>
             <select name="role" id="dropdown" class="form-control" required>
               <option disabled selected value>Select current situation</option>
-              <option value="Home Owner"></option>
-              <option value="job"></option>
-              <option value="learner"></option>
-              <option value="preferNotToSay"></option>
+              <option value="iNeedAnAardvark">I need an aardvark</option>
+              <option value="iAmAnAardvark">I am an aardvark</option>
+              <option value="imNotAnAardvark">I am not an aardvark</option>
+              <option value="preferNotToSay">I perfer not say</option>
             </select>
           </div>
-          <div class="form-group">
-            <p>Would you recommend free code camp to a friend?</p>
+          <div class="survey-form-control">
+            <p>Would you recomend Aardvarks to a friend?</p>
             <label
               ><input type="radio" name="user-recommend" class="input-radio" checked />Yes</label
             >
             <label><input type="radio" name="user-recommend" class="input-radio" />Maybe</label>
             <label><input type="radio" name="user-recommend" class="input-radio" />Nope</label>
           </div>
-          <div class="form-group">
+          <div class="survey-form-control">
             <p>What is your favorite feature of freecodecamp?</p>
             <select name="most-like" name="mostLike" class="form-control" required></select>
           </div>
