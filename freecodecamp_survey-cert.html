@@ -7,91 +7,84 @@
   </head>
   <body>
     <div class="container">
-      <div id="surveyContainer">
-        <header class="header">
-          <h1 id="title" class="header-text">Fishing Survey</h1>
-          <p id="description" class="description-text">
-            Please take a moment to take this survey for fishing awearness
-          </p>
-        </header>
-        <!-- The form tag groups all the div containers -->
-        <form id="form-container">
-          <div class="survey-form-control">
-            <div>
-              <label id="name-label" for="name">Name </label>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                class="input-control"
-                placeholder="Enter your name"
-                required
-              />
-            </div>
-          </div>
-          <div class="survey-form-control">
-            <label id="email-label" for="email"
-              >Email
-
-              <input
-                type="email"
-                name="email"
-                id="email"
-                class="input-control"
-                placeholder="Enter your email"
-                required
-              />
-            </label>
-          </div>
-          <div class="survey-form-control">
-            <label id="age-label" for="age"
-              >Age
-              <span class="clue">(optional)</span>
-            </label>
-            <input type="number" name="age" id="age" class="form-control" placeholder="Age" />
-          </div>
-
-          <div class="survey-form-control">
-            <p>What describes your current situation?</p>
-            <select name="role" id="dropdown" class="form-control" required>
-              <option disabled selected value>Select current situation</option>
-              <option value="iNeedAnAardvark">I need an aardvark</option>
-              <option value="iAmAnAardvark">I am an aardvark</option>
-              <option value="imNotAnAardvark">I am not an aardvark</option>
-              <option value="preferNotToSay">I perfer not say</option>
-            </select>
-          </div>
-          <div class="survey-form-control">
-            <p>Would you recomend Aardvarks to a friend?</p>
-            <label
-              ><input type="radio" name="user-recommend" class="input-radio" checked />Yes</label
-            >
-            <label><input type="radio" name="user-recommend" class="input-radio" />Maybe</label>
-            <label><input type="radio" name="user-recommend" class="input-radio" />Nope</label>
-          </div>
-          <div class="survey-form-control">
-            <p>What is your favorite feature of freecodecamp?</p>
-            <select name="most-like" name="mostLike" class="form-control" required></select>
-          </div>
-          <div class="form-group">
-            <p>
-              What would you like to see improved?
-              <span class="clue">(Check all that apply)</span>
-            </p>
-            <label for=""><input type="checkbox" name="prefer" class="input-checkbox" /></label>
-            <label for=""><input type="checkbox" name="prefer" class="input-checkbox" /></label>
-            <label for=""><input type="checkbox" name="prefer" class="input-checkbox" /></label>
-            <label for=""><input type="checkbox" name="prefer" class="input-checkbox" /></label>
-            <label for=""><input type="checkbox" name="prefer" class="input-checkbox" /></label>
-          </div>
-          <div class="form-group">
-            <p>Any comments or suggestions?</p>
-          </div>
-          <div class="form-control">
-            <button type="submit" id="submit" class="submit-button">Submit</button>
-          </div>
-        </form>
-      </div>
+      <header class="header">
+        <h1 id="title" class="text-center">Fishing Survey</h1>
+        <p id="description" class="description text-center">
+          Please take a moment to take this survey about fishing
+        </p>
+      </header>
+      <!-- Form starts here -->
+      <form id="survey-form">
+        <!-- Name -->
+        <div class="survey-form">
+          <label id="name" type="text" for="name">Name </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="input-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <!-- Email -->
+        <div class="survey-form">
+          <label id="email-label" type="text" for="email">Email </label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="input-control"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <!-- Age -->
+        <div class="survey-form">
+          <label id="number-label" for="number"> Age </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="input-control"
+            placeholder="Enter your Age"
+            min="1"
+            max="99"
+            required
+          />
+        </div>
+        <!-- Dropdown -->
+        <div class="survey-form">
+          <p class="center-text">What type of fishing do you like?</p>
+          <select name="Type of fishing" id="dropdown" required>
+            <option disabled selected value="">Please choose an option</option>
+            <option value="fresh water">deep sea</option>
+            <option value="sea water">fresh water</option>
+            <option value="both">both</option>
+          </select>
+        </div>
+        <!-- Radio -->
+        <div class="survey-form">
+          <label for=""
+            >what kind of fish do you like? <input type="radio" name="" id="" />Big Ones
+          </label>
+          <label for=""><input type="radio" name="" id="" />Huge Ones</label>
+        </div>
+        <div class="survey-form">
+          <!-- Check Box -->
+          <label for="">
+            <input type="checkbox" name="" id="" />
+          </label>
+          <label for=""><input type="checkbox" name="" id="" /></label>
+          <label for=""><input type="checkbox" name="" id="" /></label>
+        </div>
+        <div class="survey-form">
+          <p></p>
+        </div>
+        <div>
+          <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+      </form>
     </div>
   </body>
 </html>
